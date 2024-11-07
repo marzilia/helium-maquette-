@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap');
+
+* {
+  font-family: "inter", sans-serif;
+  margin: 0;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+p {
+  font-size: 2 rem;
+}
+
+body {
+  min-height: 100vh;
+  background: rgba(19, 18, 18, 0.959);
+  color: rgb(240, 234, 234)
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+nav ul {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px auto;
+}
+
+.header-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+.header-left-container h3 {
+  color: #474dff;
+  font-size: 1.8rem;
+}
+
+.header-right {
+  width: 50%;
+}
+
+#modem {
+  width: 100%;
+}
+
+.infos {
+  display: flex;
+  background: black;
+  border-radius: 10px;
+}
+
+.infos-left {
+  width: 33%;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+}
+
+button {
+  border: none;
+  background: #474dff;
+  color: white;
+  width: 150px;
+  padding: 10px 0;
+  border-radius: 10px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin: 5px;
+  display: block;
+}
+
+.infos-right {
+  width: 67%;
+}
+
+.investors {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80%;
+}
+
+.img-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.img-container img {
+  height: 60px;
+}
+
+/**************** MEDIA QUERIES*********/
+
+@media screen and (max-width: 870px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .header-left-container h3 {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width:615px) {
+
+  nav {
+    justify-content: space-around;
+  }
+
+  nav ul {
+    font-size: 0.7rem;
+  }
+
+  .header-left .header-right {
+    flex-direction: column;
+  }
+
+  .infos {
+    display: block;
+    justify-content: center;
+  }
+
+  button {
+    margin: 5px auto;
+  }
+
+  .img-container {
+    height: 20px;
+  }
+}
